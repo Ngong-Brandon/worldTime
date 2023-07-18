@@ -62,7 +62,7 @@ harare
     const AfricanCountries = africa.split(",");
 function makeMatch(){
     let ine = document.getElementById("search").value;
-  let input =  ine.toLowercase();
+  let input =  ine.toLowerCase();
 
     if(input == ""){
 
