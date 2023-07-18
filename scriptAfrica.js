@@ -70,6 +70,7 @@ function makeMatch(){
 
     }
     const reg = new RegExp(input);
+    reg.toLowercase();
       return AfricanCountries.filter((country)=>{
         if(country.match(reg)){
             return country;
