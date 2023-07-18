@@ -61,7 +61,8 @@ harare
 `
     const AfricanCountries = africa.split(",");
 function makeMatch(){
-    let input = document.getElementById("search").value;
+    let ine = document.getElementById("search").value;
+  let input =  ine.toLowercase();
 
     if(input == ""){
 
@@ -70,7 +71,6 @@ function makeMatch(){
 
     }
     const reg = new RegExp(input);
-    reg.toLowercase();
       return AfricanCountries.filter((country)=>{
         if(country.match(reg)){
             return country;
