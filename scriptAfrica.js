@@ -133,7 +133,7 @@ window.addEventListener("load",()=>{
 })
 }
 
-function displayImageTesti(){
+/*function displayImageTesti(){
     let imagePreview = document.getElementById("imagePreview");
     let imageInput =  document.getElementById("file");
     imageInput.addEventListener("change", (event)=>{
@@ -190,7 +190,7 @@ function getCommentAndDisplay(){
 })
         document.getElementById("comments").innerHTML += localStorage.getItem("comment");
 
-}
+}*/
 
 function apiSearchResults(countryToBeSearch){
     document.getElementById("none").innerHTML = "";
