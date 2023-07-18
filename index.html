@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Short-cut icon" href="europe/logo.PNG" type="x-icon">
+    <script src="https://kit.fontawesome.com/4191218c11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Clock</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        border:0;
+        font-family: cursive;
+      
+    }
+    .mainbg{
+        background-repeat: repeat;
+        background-size:contain;
+        width:100%;
+        height: 100%;
+        filter: blur(10px);
+
+
+    }
+    .main{
+        position: absolute;
+        z-index: 10;
+        top:50%;left:50%;
+        transform: translate(-50%,-50%);
+        display: grid;
+        gap:4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .main a{
+        text-decoration: none;
+        padding: 3rem;
+        background-color: blueviolet;
+        border-radius: 1rem;
+        position: relative;
+        top:50%;left:50%;
+        transform: translate(-50%,-50%);
+        border:.3rem solid white;
+        color:white;
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        box-shadow: 0 0 .1rem .1rem blueviolet;
+    }
+    .main a:hover{
+        padding: 4rem;
+        transition: .3s;
+        box-shadow: 0 0 1rem .5rem blueviolet;
+        border: .3rem solid orange;
+
+    }
+
+    h2{
+        top:10%;
+        left:10%;
+        position: absolute;
+    }
+
+
+    @media screen and (max-width:780px){
+        .mainbg{
+            background-repeat: repeat;
+            background-size: auto;
+        }
+        .main{
+            padding-top:30rem;
+           grid-template-columns: 1fr;
+        }
+        h2{
+            margin:.5rem;
+            top:0;left:0;
+        }
+        body{margin: .5rem;}
+    }
+
+
+</style>
+<body>
+
+    <img src="https://th.bing.com/th/id/R.7f21a88be96857b696f762b4ba0c31f0?rik=IDrwbPK%2fAcH%2bfQ&riu=http%3a%2f%2fwww.fabiovisentin.com%2fworld_map%2fpolitical_world_map.jpg&ehk=nBOYjrFQ8rmOhIUJwUv23rMr4sw4%2blIpRawjtD2Y0VA%3d&risl=&pid=ImgRaw&r=0" alt="" class="mainbg">
+    <img src="https://th.bing.com/th/id/R.7f21a88be96857b696f762b4ba0c31f0?rik=IDrwbPK%2fAcH%2bfQ&riu=http%3a%2f%2fwww.fabiovisentin.com%2fworld_map%2fpolitical_world_map.jpg&ehk=nBOYjrFQ8rmOhIUJwUv23rMr4sw4%2blIpRawjtD2Y0VA%3d&risl=&pid=ImgRaw&r=0" alt="" class="mainbg">
+
+
+   <center> <h2>
+        Choose the continent to which the city is located.
+    </h2>
+    </center>
+    <br><br><br>
+    <main class="main">
+       
+
+       <a href="america.html"><div>AMERICA</div></a>
+       <a href="africa.html"><div>AFRICA</div></a>
+       <a href="europe.html"><div>EUROPE</div></a>
+       <a href="asia.html"><div>ASIA</div></a>
+       <a href="australia.html"><div>AUSTRALIA</div></a>
+
+       
+    </main>
+    <br><br><br>
+
+    <center style="position:absolute;z-index:2000;top:1000px;margin-left:3rem;padding:2rem;border-bottom:.1rem solid blueviolet;">
+        <b>Build by Ngong Brandon  &copy; 2023 </b>
+
+     </center>
+
+   
+</body>
+</html>
